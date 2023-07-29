@@ -1,11 +1,11 @@
-import React, { Component } from 'react'         //shortcut rce
+// import React, { Component } from 'react'         //shortcut rce
 
-export class NewsItem extends Component {
-  render() {
-    return (
-      <div>NewsItem</div>
-    )
-  }
-}
+// export class NewsItem extends Component {
+//   render() {
+//     return (
+//       <div>NewsItem</div>
+//     )
+//   }
+// }
 
-export default NewsItem
+// export default NewsItem
