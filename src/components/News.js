@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Card, Button } from 'react-bootstrap';
 const News = () => {
   const [articles, setArticles] = useState([]);
 
@@ -49,42 +48,37 @@ const News = () => {
     // </Card>
     // </div>
     <div className="container" >
-      <h1>Latest News</h1>
-      <ul>
+      <h1 className="py-3">Latest News</h1>
+      <div className="container">
+      <h1 className="py-3">Latest News</h1>
+      <div className="row">
         {articles.map((article, index) => (
-          <li key={index}>
-            <Card style={{ width: "29rem" }}>
-              <Card.Img variant="top" src={article.urlToImage} />
-              <Card.Body>
+          <div key={index} className="col-md-4 mb-4">
+            <Card style={{ backgroundColor: '#1b2f36', color: 'white', height: '100%' }}>
+              <Card.Img
+                variant="top"
+                src={article.urlToImage}
+                style={{ height: '200px', objectFit: 'cover' }}
+              />
+              <Card.Body className="d-flex flex-column">
                 <Card.Title>{article.title}</Card.Title>
                 <Card.Text>{article.description}</Card.Text>
-                <p>{article.source.name}</p>
-                <p>{article.author}</p>
-                <Button  variant="primary">
+                <p className="text-right mb-0" style={{ fontStyle: 'italic', flexGrow: 1 }}>
+                  {article.source.name} - {article.author}
+                </p>
+                <Button variant="primary" className="w-100 mt-auto" style={{ backgroundColor: '#fa933d', paddingBottom: 0 }}>
                   Read More
                 </Button>
               </Card.Body>
             </Card>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
+    </div>
+  
     </div>
   );
 };
 
 export default News;
 
-// import React, { Component } from 'react'
-// import NewsItem from './NewsItem'
-
-// export class News extends Component {
-//   render() {
-//     return (
-//       <div>News
-//         <NewsItem/>
-//       </div>
-//     )
-//   }
-// }
-
-// export default News
