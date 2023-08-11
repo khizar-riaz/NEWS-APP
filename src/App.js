@@ -14,6 +14,7 @@ import Health from './pages/Health'
 import Science from './pages/Science'
 import Sports from './pages/Sports'
 import Technology from './pages/Technology'
+import Footer from './components/Footer';
 export default class App extends Component {
   render() {
     return (
@@ -33,6 +34,7 @@ export default class App extends Component {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />       
         </Routes>
+        <Footer/>
       </div>
       </Router>
     )

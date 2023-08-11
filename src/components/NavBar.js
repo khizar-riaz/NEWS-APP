@@ -8,7 +8,7 @@ export class NavBar extends Component {
 
   render() {
     return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" bg="dark" data-bs-theme="dark">
         <div class="container-fluid">
         <NavLink className="navbar-brand" exact to="/">
         NewsAppUsingAPI
