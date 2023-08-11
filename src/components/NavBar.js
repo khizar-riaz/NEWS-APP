@@ -49,7 +49,7 @@ export class NavBar extends Component {
               </NavLink>
               </li>
               <li class="nav-item">
-              <NavLink className="nav-link" aria-current="page" exact to="/ technology">
+              <NavLink className="nav-link" aria-current="page" exact to="/technology">
                 Technology
               </NavLink>
               </li>
