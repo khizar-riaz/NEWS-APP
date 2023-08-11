@@ -52,6 +52,7 @@ const News = () => {
                     variant="primary"
                     className="w-100 mt-auto"
                     style={{ backgroundColor: "#fa933d", paddingBottom: 0 }}
+                    
                   >
                     Read More
                   </Button>

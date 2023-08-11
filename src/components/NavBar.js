@@ -19,8 +19,38 @@ export class NavBar extends Component {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-              <NavLink className="nav-link" aria-current="page" exact to="/">
-                Home
+              <NavLink className="nav-link" aria-current="page" exact to="/general">
+                General
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/business">
+                Business
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/entertainment">
+                Entertainment
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/health">
+                Health
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/science">
+                Science
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/sports">
+                Sports
+              </NavLink>
+              </li>
+              <li class="nav-item">
+              <NavLink className="nav-link" aria-current="page" exact to="/ technology">
+                Technology
               </NavLink>
               </li>
               <li class="nav-item">
